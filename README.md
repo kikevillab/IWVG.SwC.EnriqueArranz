@@ -26,4 +26,4 @@ Mirar en la [wiki][] del proyecto
 
 *&copy;Jesús Bernal Bermúdez*.
 
- [wiki]: https://github.com/miw-upm/IWVG.SwColaborativo/wiki/Pr%C3%A1ctica.-Software-Colaborativo
+ [wiki]: https://github.com/miw-upm/IWVG.SwColaborativo/wiki/Pr%C3%A1ctica-de-Software-Colaborativo
