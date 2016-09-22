@@ -1,4 +1,4 @@
-# SPAI: ECP2
+# IWVG: SwColaborativo
 ## Descripción del proyecto
 Se parte de un proyecto ya desarrollado, y se pretende realizar una ampliación del mismo.
 
@@ -45,8 +45,8 @@ Sorteo para asignar a cada `Arquitecto` su equipo de tres `Programadores`. Inclu
 ### Fase 2. Preparar proyecto en el repositorio
 El `Arquitecto` deberá preparar el proyecto en su cuenta de GitHub.
 
-1. Se llamará ***SpaiEcp2Arquitecto***
-1. Creará el proyecto en local y lo subirá a Git, no subir los ficheros de configuración de Eclipse!!!. en el primer commit incluir en el mensaje el nombre del arquitecto
+1. Se llamará ***IWVG.SwC.Arquitecto***
+1. Creará el proyecto en local y lo subirá a Git, no subir los ficheros de configuración de Eclipse!!!. En el primer commit incluir en el mensaje el nombre del arquitecto
 1. Organizará la forma de gestionar el proyecto: creará etiquetas, establecerá el formato de las mejoras... 
 1. Deberá añadir los test de cada clase y comprobar su buen funcionamiento
 1. Actualizará el repositorio remoto
@@ -59,7 +59,7 @@ El `Arquitecto` deberá preparar el proyecto en su cuenta de GitHub.
 Los `Programadores` importarán este proyecto en sus equipos.
 
 ### Fase 4. Planificación de la ampliación por parte de Arquitecto
-El `Arquitecto` establecerá **DOS** ampliación para las clases Point, User y DecimalCollection, y **TRES** ampliaciones para Fraction. Cada ampliación de clase debe ir acompañada con sus ampliaciones de test y su explicación en la wiki.
+El `Arquitecto` establecerá **UNA** ampliación para las clases Point, User y DecimalCollection, y **TRES** ampliaciones para Fraction, una para cada `programador`. Cada ampliación de clase debe ir acompañada con sus ampliaciones de test y su explicación en la wiki.
 
 ### Fase 5. Crear tickets
 1. El `Arquitecto` mandará `tickets` para implementar las mejoras. Procurará que sea equitativo el trabajo de los `programadores`
@@ -67,7 +67,7 @@ El `Arquitecto` establecerá **DOS** ampliación para las clases Point, User y D
 
 ### Fase 6. Comprobación final del proyecto
 1. El `Arquitecto` comprobará el buen funcionamiento de la ampliación. Si tuviera errores, creará nuevos tickets.
-1. Finaliza la ampliación, creando una versión beta para publicar
+1. Finaliza la ampliación, creando una `release-1.0` para liberar.
 
 ## Evaluación
 La nota que se obtiene en este ejercicio es de 7 puntos por el rol de `Arquitecto` y 3 puntos por el rol de `Programador`.
