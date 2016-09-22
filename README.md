@@ -1,5 +1,5 @@
-# `SPAI`
-## Ejercicio colaborativos entre alumnos: ECP2
+# `IWVG. Ecosistema`
+## Ejercicio colaborativos entre alumnos
 El objetivo es instruir al alumno en el desarrollo de software colaborativo.
 
 Cada alumno deberá realizar dos roles: `Arquitecto de software` y `Programador`.
@@ -26,4 +26,4 @@ Mirar en la [wiki][] del proyecto
 
 *&copy;Jesús Bernal Bermúdez*.
 
- [wiki]: https://github.com/miw-upm/SPAI/wiki/Ecp2
+ [wiki]: https://github.com/miw-upm/IWVG.SwColaborativo/wiki/Pr%C3%A1ctica.-Software-Colaborativo
