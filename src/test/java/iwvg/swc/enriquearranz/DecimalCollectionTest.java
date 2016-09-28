@@ -38,5 +38,11 @@ public class DecimalCollectionTest {
     public void testHigher() {
         assertEquals(3, this.dc.higher(), 10e-5);
     }
+    
+    @Test
+    public void testSlice(){
+    	dc.slice(2.0);
+    	assertEquals(3, dc.size());
+    }
 
 }
