@@ -43,4 +43,10 @@ public class FractionTest {
 		assertEquals(2, fr.getDenominator());
 	}
 
+	@Test
+	public void testEquals(){
+		Fraction f = new Fraction(4,2);
+		assertEquals(true,fr.equals(f));
+	}
+	
 }
