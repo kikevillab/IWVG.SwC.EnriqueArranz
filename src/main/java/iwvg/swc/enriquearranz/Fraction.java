@@ -60,4 +60,8 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean equals(Fraction f){
+    	return decimal() == f.decimal();
+    }
+    
 }
