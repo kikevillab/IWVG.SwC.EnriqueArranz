@@ -34,5 +34,9 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public void slice(Double i){
+    	this.collection.remove(i);
+    }
 
 }
