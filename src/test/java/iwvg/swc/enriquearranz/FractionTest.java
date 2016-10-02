@@ -49,4 +49,10 @@ public class FractionTest {
 		assertEquals(true,fr.equals(f));
 	}
 	
+	@Test
+	public void testInverse(){
+		Fraction f = new Fraction(2,4);
+		assertEquals(true, fr.equals(f.inverse()));
+	}
+	
 }

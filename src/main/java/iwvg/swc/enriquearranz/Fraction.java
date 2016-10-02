@@ -64,4 +64,8 @@ public class Fraction {
     	return decimal() == f.decimal();
     }
     
+    public Fraction inverse() {
+    	return new Fraction(this.getDenominator(), this.getNumerator());
+    }
+    
 }
