@@ -42,4 +42,8 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
     
+    public double getDistance(Point p) {
+        return Math.sqrt(Math.pow((p.x - this.x), 2) + Math.pow((p.y - this.y), 2));
+    }
+    
 }

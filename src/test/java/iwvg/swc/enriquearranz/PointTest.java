@@ -48,5 +48,10 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
+    
+    @Test
+    public void testGetDistance() {
+        assertEquals(Math.sqrt(10), pt.getDistance(new Point(5, 4)), 0.001);
+    }
 
 }
