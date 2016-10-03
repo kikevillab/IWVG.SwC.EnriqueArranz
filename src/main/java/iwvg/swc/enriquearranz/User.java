@@ -1,4 +1,4 @@
-package es.upm.miw.spai.ecp2;
+package iwvg.swc.enriquearranz;
 
 public class User {
     private int number;

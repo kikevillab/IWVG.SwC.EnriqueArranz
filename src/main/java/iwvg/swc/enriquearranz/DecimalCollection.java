@@ -1,4 +1,4 @@
-package es.upm.miw.spai.ecp2;
+package iwvg.swc.enriquearranz;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +33,10 @@ public class DecimalCollection {
                 higher = item;
         }
         return higher;
+    }
+    
+    public void slice(Double i){
+    	this.collection.remove(i);
     }
 
 }

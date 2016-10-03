@@ -1,4 +1,4 @@
-package es.upm.miw.spai.ecp2;
+package iwvg.swc.enriquearranz;
 
 public class Point {
     private int x, y;
@@ -40,6 +40,10 @@ public class Point {
     @Override
     public String toString() {
         return "Point[" + x + "," + y + "]";
+    }
+    
+    public double getDistance(Point p) {
+        return Math.sqrt(Math.pow((p.x - this.x), 2) + Math.pow((p.y - this.y), 2));
     }
     
 }

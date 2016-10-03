@@ -1,6 +1,7 @@
-package es.upm.miw.spai.ecp2;
+package iwvg.swc.enriquearranz;
 
 import static org.junit.Assert.assertEquals;
+import iwvg.swc.enriquearranz.Point;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -46,6 +47,11 @@ public class PointTest {
     @Test
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
+    }
+    
+    @Test
+    public void testGetDistance() {
+        assertEquals(Math.sqrt(10), pt.getDistance(new Point(5, 4)), 0.001);
     }
 
 }
