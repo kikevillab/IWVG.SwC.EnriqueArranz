@@ -35,18 +35,29 @@ package es.upm.miw.spai.ecp2;
  * 
  */
 public class Fraction {
-    private int numerator;
+    private static final String Fraction = null;
+
+	private int numerator;
 
     private int denominator;
 
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
-        this.denominator = denominator;
+        try {
+        	if(this.denominator!=0)
+        		this.denominator = denominator;	
+        	}
+        		catch(Exception e){
+        			System.out.println ("Controlar el denominador");
+        	}
+          
+        	this.denominator = denominator;
+        	
     }
 
-    public Fraction() {
-        this(1, 1);
-    }
+	public Fraction() {
+		this(1, 1);
+	}
 
     public int getNumerator() {
         return numerator;
