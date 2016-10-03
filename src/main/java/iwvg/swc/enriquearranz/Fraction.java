@@ -41,7 +41,15 @@ public class Fraction {
 
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
-        this.denominator = denominator;
+        
+        try{
+        	if(this.denominator==0)
+        		this.denominator = denominator;
+        }catch(Exception e){
+        	System.out.println("Error: denominator es 0");
+        	
+        }
+         
     }
 
     public Fraction() {
