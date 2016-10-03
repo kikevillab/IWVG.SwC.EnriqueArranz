@@ -11,7 +11,7 @@ public class FractionTest {
 	Fraction fr;
 	
 	@Before
-	public void before(){
+	public void before() throws Exception{
 		fr = new Fraction(4, 2);
 	}
 
@@ -22,7 +22,7 @@ public class FractionTest {
 	}
 
 	@Test
-	public void testFraction() {
+	public void testFraction() throws Exception {
 		fr = new Fraction();
 		assertEquals(1, fr.getNumerator());
 	    assertEquals(1, fr.getDenominator());
@@ -44,13 +44,13 @@ public class FractionTest {
 	}
 
 	@Test
-	public void testEquals(){
+	public void testEquals() throws Exception{
 		Fraction f = new Fraction(4,2);
 		assertEquals(true,fr.equals(f));
 	}
 	
 	@Test
-	public void testInverse(){
+	public void testInverse() throws Exception{
 		Fraction f = new Fraction(2,4);
 		assertEquals(true, fr.equals(f.inverse()));
 	}

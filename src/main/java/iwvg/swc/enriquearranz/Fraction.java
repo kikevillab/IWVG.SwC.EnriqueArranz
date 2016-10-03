@@ -39,20 +39,17 @@ public class Fraction {
 
     private int denominator;
 
-    public Fraction(int numerator, int denominator) {
+    public Fraction(int numerator, int denominator) throws Exception {
         this.numerator = numerator;
-        
-        try{
-        	if(this.denominator==0)
-        		this.denominator = denominator;
-        }catch(Exception e){
-        	System.out.println("Error: denominator es 0");
-        	
-        }
+        if(denominator<=0) 
+        	throw new Exception("Error: el denominator tiene ser distinto que 0");
+        else
+        	this.denominator = denominator;
+       
          
     }
 
-    public Fraction() {
+    public Fraction() throws Exception {
         this(1, 1);
     }
 
@@ -72,7 +69,7 @@ public class Fraction {
     	return decimal() == f.decimal();
     }
     
-    public Fraction inverse() {
+    public Fraction inverse() throws Exception {
     	return new Fraction(this.getDenominator(), this.getNumerator());
     }
     
