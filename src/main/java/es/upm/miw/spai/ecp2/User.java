@@ -2,7 +2,7 @@ package es.upm.miw.spai.ecp2;
 
 public class User {
     private int number;
-
+    private int age;
     private String name;
 
     private String familyName;
@@ -12,14 +12,18 @@ public class User {
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
-    public User(int number, String name, String familyName) {
+    public User(int number, int age, String name, String familyName) {
         this.number = number;
+        this.age = age;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
     }
 
     public int getNumber() {
         return this.number;
+    }
+    public int getAge() {
+        return this.age;
     }
     
     public String getName() {
