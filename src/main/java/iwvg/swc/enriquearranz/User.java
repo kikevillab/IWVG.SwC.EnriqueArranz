@@ -2,7 +2,9 @@ package iwvg.swc.enriquearranz;
 
 public class User {
     private int number;
-
+    
+    private int age;
+    
     private String name;
 
     private String familyName;
@@ -12,14 +14,19 @@ public class User {
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
-    public User(int number, String name, String familyName) {
+    public User(int number,int age, String name, String familyName) {
         this.number = number;
+        this.age = age; 
         this.name = this.format(name);
         this.familyName = this.format(familyName);
     }
 
     public int getNumber() {
         return this.number;
+    }
+    
+    public int getAge() {
+        return this.age;
     }
 
     public String getName() {
@@ -35,6 +42,10 @@ public class User {
     }
 
     public String initials() {
-        return this.name.substring(0, 1) + ".";
+        return this.familyName.substring(0, 1) + this.name.substring(0, 1) + this.number;
+    }
+    
+    public String getTag(){
+		return this.initials();  	
     }
 }
