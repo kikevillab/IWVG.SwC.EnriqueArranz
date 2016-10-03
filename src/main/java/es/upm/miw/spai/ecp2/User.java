@@ -21,11 +21,11 @@ public class User {
     public int getNumber() {
         return this.number;
     }
-
+    
     public String getName() {
         return this.name;
     }
-
+    
     public String getFamilyName() {
         return this.familyName;
     }
@@ -35,6 +35,10 @@ public class User {
     }
 
     public String initials() {
-        return this.name.substring(0, 1) + ".";
+        return this.familyName.substring(0, 1) +  " " + this.name.substring(0, 1) + "." + this.number;
+    }
+    
+    public String getTag(){
+		return this.initials();  	
     }
 }
