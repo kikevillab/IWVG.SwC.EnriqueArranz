@@ -1,8 +1,8 @@
-package es.upm.miw.spai.ecp2;
+package iwvg.swc.enriquearranz;
 
 public class User {
     private int number;
-
+    
     private String name;
 
     private String familyName;
@@ -21,6 +21,7 @@ public class User {
     public int getNumber() {
         return this.number;
     }
+    
 
     public String getName() {
         return this.name;
@@ -35,6 +36,10 @@ public class User {
     }
 
     public String initials() {
-        return this.name.substring(0, 1) + ".";
+       return this.name.substring(0, 1) + ".";
+    }
+    
+    public String getTag(){
+    	return this.familyName.substring(0, 1) + this.name.substring(0, 1) + this.number; 	
     }
 }

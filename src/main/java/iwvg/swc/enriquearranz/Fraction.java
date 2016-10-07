@@ -1,4 +1,4 @@
-package es.upm.miw.spai.ecp2;
+package iwvg.swc.enriquearranz;
 
 /**
  * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el
@@ -39,12 +39,17 @@ public class Fraction {
 
     private int denominator;
 
-    public Fraction(int numerator, int denominator) {
+    public Fraction(int numerator, int denominator) throws Exception {
         this.numerator = numerator;
-        this.denominator = denominator;
+        if(denominator<=0) 
+        	throw new Exception("Error: el denominator tiene ser distinto que 0");
+        else
+        	this.denominator = denominator;
+       
+         
     }
 
-    public Fraction() {
+    public Fraction() throws Exception {
         this(1, 1);
     }
 
@@ -58,6 +63,14 @@ public class Fraction {
 
     public double decimal() {
         return (double) numerator / denominator;
+    }
+    
+    public boolean equals(Fraction f){
+    	return decimal() == f.decimal();
+    }
+    
+    public Fraction inverse() throws Exception {
+    	return new Fraction(this.getDenominator(), this.getNumerator());
     }
     
 }
